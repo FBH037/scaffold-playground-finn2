@@ -31,3 +31,5 @@ To use this repo:
 - `git clone git@github.com:gSchool/scaffold-playground.git`
 - create your own repository
 - `git remote set-url <your github url>`
+
+put all the people and organizations on the index page

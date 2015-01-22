@@ -1,0 +1,24 @@
+<p class="lead">Welcome to your homepage</p>
+
+<td><% @orglist.each do |organization| %>
+  <tr>
+    <td><%= organization.name %></td>
+    <td><%= organization.number_of_employees %></td>
+    <td><%= link_to 'Show', organization %></td>
+    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+    <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <% end %>
+
+<p></p>
+
+  <% @peoplelist  .each do |person| %>
+  <tr>
+    <td><%= person.fist_name %></td>
+    <td><%= person.last_name %></td>
+    <td><%= person.date_of_birth %></td>
+    <td><%= link_to 'Show', person %></td>
+    <td><%= link_to 'Edit', edit_person_path(person) %></td>
+    <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <% end %>
